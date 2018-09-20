@@ -14,21 +14,46 @@ h2 {
   margin: 20px;
 }
 
-p {
+h4 {
   font-size: 20px;
   font-family: Helvetica;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: #0ee;
   margin: 20px;
+  text-shadow: gray 0px 2px 2px;
+}
+
+p {
+  font-family: Helvetica;
+  text-align: left;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
   text-shadow: black 0px 0px 2px;
 }
 
 div {
   display: inline-block;
-  margin-left: 150px;
+  margin-left: 0px;
   margin-right: 150px;
-  padding:
 }
+
+ul {
+  font-family: Helvetica;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-shadow: black 0px 0px 2px;
+}
+
+ol {
+  font-family: Helvetica;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-shadow: black 0px 0px 2px;
+}
+
 
 .seperator {
   background: #0C024C;
@@ -40,11 +65,11 @@ div {
 
 #background_1 {
   /* Old browsers */
-  background: #141E30;
+  background: #222;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+  background: -webkit-linear-gradient(-45deg, #ffffff, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: radial-gradient(#46577D, #141E30);
+  background: radial-gradient(#aaa, #000);
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Sydney_skyline_at_dusk_-_Dec_2008.jpg);
   width: 1250px;
   background-size: cover;
