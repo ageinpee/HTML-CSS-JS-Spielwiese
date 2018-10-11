@@ -19,6 +19,21 @@ h2 {
   margin: 20px;
 }
 
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas:
+    "home css n1 n2 n3";
+  font-size: 30px;
+  font-family: Helvetica;
+  text-align: center;
+  text-color: White;
+  background: black;
+  padding: 20px;
+}
+
 .main {
   display: grid;
   grid-template-columns: auto;
@@ -45,9 +60,9 @@ h2 {
 
 .heading {
   grid-area: header;
-  border: solid tan 3px;
+  border: solid rgba(255, 228, 181, .6) 3px;
   border-radius: 20px;
-  box-shadow: 2px 2px 10px 4px #111;
+  box-shadow: 2px 2px 7px 4px #111;
 }
 
 .content {
@@ -82,10 +97,10 @@ h2 {
 
 #Zutaten {
   grid-area: "left-content";
-  border: solid Tan 3px;
+  border: solid rgba(255, 228, 181, .6) 3px;
   border-radius: 20px;
   background-color: rgba(255, 228, 181, .6);
-  box-shadow: 2px 2px 10px 4px #111;
+  box-shadow: 2px 2px 7px 4px #111;
 }
 
 #Zutaten ul {
@@ -94,13 +109,13 @@ h2 {
 
 #Zubereitung {
   grid-area: "right-content";
-  border: solid Tan 3px;
+  border: solid rgba(255, 228, 181, .6) 3px;
   border-radius: 20px;
   background-color: rgba(255, 228, 181, .6);
   list-style-position: inside;
   margin: 40px;
   padding: 30px 30px 30px 50px;
-  box-shadow: 2px 2px 10px 4px #111;
+  box-shadow: 2px 2px 7px 4px #111;
 }
 
 #Zubereitung ol {
@@ -119,3 +134,24 @@ h2 {
   right: 100%;
   margin-right: 0.5em;
 }
+
+nav a {
+  background-color: rgba(255,239,213, 1);
+  border: solid rgba(255,239,213, 1) 2px;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  text-shadow: black 0px 0px 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: rgba(255,228,181, 1);
+}
+
+nav #nav_home {  grid-area: home;}
+nav #nav_css {  grid-area: css;}
+nav #nav1 {  grid-area: n1;}
+nav #nav2 {  grid-area: n2;}
+nav #nav3 {  grid-area: n3;}
