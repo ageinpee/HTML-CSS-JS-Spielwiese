@@ -31,6 +31,15 @@ nav {
   text-align: center;
   text-color: White;
   background: black;
+  /* Old browsers */
+  background: tan;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #ffffff, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: radial-gradient(#aaa, #000);
+  background-image: url(media/s_shutterstock_126135899.jpg);
+  background-repeat: repeat;
+  background-size: cover;
   padding: 20px;
 }
 
@@ -61,8 +70,10 @@ nav {
 .heading {
   grid-area: header;
   border: solid rgba(255, 228, 181, .6) 3px;
-  border-radius: 20px;
+  border-radius: 3px;
   box-shadow: 2px 2px 7px 4px #111;
+  margin: 50px;
+  padding: 15px;
 }
 
 .content {
@@ -98,9 +109,10 @@ nav {
 #Zutaten {
   grid-area: "left-content";
   border: solid rgba(255, 228, 181, .6) 3px;
-  border-radius: 20px;
+  border-radius: 3px;
   background-color: rgba(255, 228, 181, .6);
   box-shadow: 2px 2px 7px 4px #111;
+  margin: 120px;
 }
 
 #Zutaten ul {
@@ -110,10 +122,10 @@ nav {
 #Zubereitung {
   grid-area: "right-content";
   border: solid rgba(255, 228, 181, .6) 3px;
-  border-radius: 20px;
+  border-radius: 2px;
   background-color: rgba(255, 228, 181, .6);
   list-style-position: inside;
-  margin: 40px;
+  margin: 120px;
   padding: 30px 30px 30px 50px;
   box-shadow: 2px 2px 7px 4px #111;
 }
@@ -136,9 +148,8 @@ nav {
 }
 
 nav a {
-  background-color: rgba(255,239,213, 1);
-  border: solid rgba(255,239,213, 1) 2px;
-  border-radius: 5px;
+  background-color: rgba(100,100,100, 0.7);
+  border: solid rgba(20, 20, 20, 0.6) 3px;
   padding: 20px;
   color: white;
   text-shadow: black 0px 0px 3px;
@@ -147,7 +158,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgba(255,228,181, 1);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav #nav_home {  grid-area: home;}
