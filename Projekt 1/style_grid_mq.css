@@ -166,3 +166,29 @@ nav #nav_css {  grid-area: css;}
 nav #nav1 {  grid-area: n1;}
 nav #nav2 {  grid-area: n2;}
 nav #nav3 {  grid-area: n3;}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 480px) and
+                       (orientation: landscape) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 786px) and
+                       (orientation: landscape) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+  
+}
