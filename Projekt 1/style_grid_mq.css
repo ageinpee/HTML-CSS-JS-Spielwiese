@@ -195,11 +195,9 @@ nav #nav3 {  grid-area: n3;}
 
 @media only screen and (max-width: 786px) and
                        (orientation: landscape) {
-  /*        header
-    content content content
-    content content content
-          navigation
-            footer */
+  /* header navigation footer
+     content  content  content
+     content  content  content */
 }
 
 @media only screen and (max-width: 1600px) {
