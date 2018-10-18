@@ -44,14 +44,6 @@ nav {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 5fr 2fr;
-  grid-gap: 20px;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
     /* Old browsers */
     background: #222;
     /* Chrome 10-25, Safari 5.1-6 */
@@ -174,6 +166,17 @@ nav #nav3 {  grid-area: n3;}
      content
      content
      footer */
+     .main {
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: 1fr 1fr 5fr 2fr;
+       grid-gap: 20px;
+       grid-template-areas:
+         "header"
+         "navigation"
+         "content"
+         "footer";
+     }
 }
 
 @media only screen and (max-width: 480px) and
@@ -182,6 +185,16 @@ nav #nav3 {  grid-area: n3;}
      navigation content content
      navigation content content
      footer     content content */
+     .main {
+       display: grid;
+       grid-template-columns: 30% auto;
+       grid-template-rows: 1fr 5fr 2fr;
+       grid-gap: 20px;
+       grid-template-areas:
+         "navigation header"
+         "navigation content"
+         "footer content";
+     }
 }
 
 @media only screen and (max-width: 768px) {
@@ -191,6 +204,17 @@ nav #nav3 {  grid-area: n3;}
      content
      content
      footer */
+     .main {
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: 1fr 1fr 5fr 2fr;
+       grid-gap: 20px;
+       grid-template-areas:
+         "header"
+         "navigation"
+         "content"
+         "footer";
+     }
 }
 
 @media only screen and (max-width: 786px) and
@@ -198,6 +222,15 @@ nav #nav3 {  grid-area: n3;}
   /* header navigation footer
      content  content  content
      content  content  content */
+     .main {
+       display: grid;
+       grid-template-columns: 1fr 2fr 1fr;
+       grid-template-rows: 2fr 5fr;
+       grid-gap: 20px;
+       grid-template-areas:
+         "header naviagtion footer"
+         "content content content";
+     }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -206,6 +239,17 @@ nav #nav3 {  grid-area: n3;}
      content content
      content content
           footer */
+    .main {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 5fr 2fr;
+      grid-gap: 20px;
+      grid-template-areas:
+        "navigation"
+        "header"
+        "content"
+        "footer";
+    }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -214,4 +258,15 @@ nav #nav3 {  grid-area: n3;}
      content content
      content content
           footer */
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 5fr 2fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "navigation"
+      "header"
+      "content"
+      "footer";
+  }
 }
