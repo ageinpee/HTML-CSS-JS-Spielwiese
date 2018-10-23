@@ -68,16 +68,6 @@ nav {
   padding: 15px;
 }
 
-.content {
-  grid-area: content;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    "left-content right-content";
-}
-
 .subheading {
   font-size: 50px;
   font-family: "Brush Script MT";
@@ -177,6 +167,17 @@ nav #nav3 {  grid-area: n3;}
          "content"
          "footer";
      }
+
+     .content {
+       grid-area: content;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
+       grid-gap: 10px;
+       grid-template-areas:
+         "left-content"
+         "right-content";
+     }
 }
 
 @media only screen and (max-width: 480px) and
@@ -194,6 +195,16 @@ nav #nav3 {  grid-area: n3;}
          "navigation header"
          "navigation content"
          "footer content";
+     }
+
+     .content {
+       grid-area: content;
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 1fr;
+       grid-gap: 10px;
+       grid-template-areas:
+         "left-content right-content";
      }
 }
 
@@ -215,6 +226,17 @@ nav #nav3 {  grid-area: n3;}
          "content"
          "footer";
      }
+
+     .content {
+       grid-area: content;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
+       grid-gap: 10px;
+       grid-template-areas:
+         "left-content"
+         "right-content";
+     }
 }
 
 @media only screen and (max-width: 786px) and
@@ -230,6 +252,16 @@ nav #nav3 {  grid-area: n3;}
        grid-template-areas:
          "header naviagtion footer"
          "content content content";
+     }
+
+     .content {
+       grid-area: content;
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 1fr;
+       grid-gap: 10px;
+       grid-template-areas:
+         "left-content right-content";
      }
 }
 
@@ -250,6 +282,16 @@ nav #nav3 {  grid-area: n3;}
         "content"
         "footer";
     }
+
+    .content {
+      grid-area: content;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr;
+      grid-gap: 10px;
+      grid-template-areas:
+        "left-content right-content";
+    }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -268,5 +310,15 @@ nav #nav3 {  grid-area: n3;}
       "header"
       "content"
       "footer";
+  }
+
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "left-content right-content";
   }
 }
